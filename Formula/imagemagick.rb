@@ -60,7 +60,9 @@ class Imagemagick < Formula
     fails_with :clang
   end
 
-  depends_on "linuxbrew/xorg/xorg" unless OS.mac?
+  if build.with? "x11"
+    depends_on "linuxbrew/xorg/xorg" unless OS.mac?
+  end
 
   skip_clean :la
 
