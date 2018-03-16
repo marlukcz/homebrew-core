@@ -25,6 +25,7 @@ class Imagemagick < Formula
   option "without-modules", "Disable support for dynamically loadable modules"
   option "without-threads", "Disable threads support"
   option "with-zero-configuration", "Disables depending on XML configuration files"
+  option "without-x", "Compile without xorg as default"
 
   deprecated_option "enable-hdri" => "with-hdri"
   deprecated_option "with-gcc" => "with-openmp"
